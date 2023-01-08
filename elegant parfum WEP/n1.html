@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="ICONN.png">
+
+<title> Login Page</title> </head>
+<link rel="stylesheet" href="n2.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<body>
+
+  <div id='cssmenu'>
+    <ul>
+      <li  ><a href="home.html"> <i class="fa fa-home fa-fw" aria-hidden="true"></i> Home</a></li>
+       <li  ><a href='Product.html'>Products</a></li>
+       <li><a href="page2.html">Elegant Parfum For you</a></li>
+       <li ><a href="contact.html">Contact</a></li>
+       <li class='active' ><a href='n1.html'>sing In</a>
+        <li><a href="n3.html">sing up</a> </li>
+        <li  style="float: right;"> <a href="CART.html"> <i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+      </li>
+
+
+    </ul>
+    </div>
+    
+
+
+<div class="loginbox">
+<center>
+<h1>Login to EP</h1> </center>
+<form action="action_page.php" method="post">
+<!--font color=" #ff8080"-->
+ <label for="fname">user name:</label><br>
+<input name="id" type="text">
+ <label for="psw">Password:</label><br>
+<input name="pass" type="password">
+ 
+
+
+  <!--input type="submit" value="enter"-->
+  <input type="button" value="Login"onClick="pasuser(this.form)">
+  <input type="reset" value="reset">
+  <br>
+  <center>
+  <a href='n3.html' style="color:rgb(148, 255, 244);text-decoration: none;" >  Dont have account?</a><br><br>
+    <a href='n3.html' style="color:rgb(148, 255, 244);text-decoration: none;"> forget your password?</a>
+  </center>
+
+</form> 
+
+</div>
+<script language="javascript">
+
+function pasuser(form) {
+if (form.id.value=="aisha") { 
+if (form.pass.value=="12") {              
+location="aisha.html"
+}
+}
+if (form.id.value=="zainab") { 
+if (form.pass.value=="12") {              
+location="zainab.html"
+} }
+if (form.id.value=="rana") { 
+if (form.pass.value=="12") {              
+location="rana.html"
+} }
+if (form.id.value=="reem") { 
+if (form.pass.value=="12") {              
+location="reem.html"
+} }
+if (form.id.value=="haneen") { 
+if (form.pass.value=="12") {              
+location="haneen.html"
+} 
+else {
+alert("Invalid ID")
+}
+}
+}
+
+</script>
+
+
+</body>
+</html>
